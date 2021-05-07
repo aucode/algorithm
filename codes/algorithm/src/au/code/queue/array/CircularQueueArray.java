@@ -5,7 +5,6 @@ import au.code.Menu;
 
 import java.util.Scanner;
 
-import static com.sun.deploy.net.UpdateTracker.clear;
 
 /**
  * @Project algorithm
@@ -24,7 +23,6 @@ public class CircularQueueArray {
         Scanner scanner = new Scanner(System.in);   //键盘输入
 
         while (flag){
-            clear();
             Object[] msg = new String[]{"a：添加队列","g：取出队列","h：获取头队列","s：显示队列","e：程序队列"};
             o.menu(msg);
             o.println("请输入...");

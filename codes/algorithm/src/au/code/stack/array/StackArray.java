@@ -49,23 +49,26 @@ class Stack {
 
     }
 
-    /*
-        stack is full
+    /**
+     * stack is full
+     * @return
      */
     public boolean isFull(){
 
         return this.top == this.size -1;
     }
 
-    /*
-        stack is empty
-
+    /**
+     * stack is empty
+     * @return
      */
     public boolean isEmpty(){
         return this.top == -1;
     }
-    /*
-        Push element in stack.
+
+    /**
+     * Push element in stack.
+     * @param val
      */
     public void push(int val) {
 
@@ -77,8 +80,9 @@ class Stack {
         this.stack[++this.top] = val;
     }
 
-    /*
-        Pop val element of stack.
+    /**
+     * Pop val element of stack.
+     * @return
      */
     public int pop(){
         if (isEmpty()) {
@@ -93,8 +97,9 @@ class Stack {
         return this.stack[this.top--];
     }
 
-    /*
-        return stack top element.
+    /**
+     * return stack top element.
+     * @return
      */
     public int getTopValue(){
         return this.stack[this.top];
@@ -121,18 +126,6 @@ class Stack {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
